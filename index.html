@@ -1,0 +1,44 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Desafio 1 - Bootcamp Full Stack - IGTI</title>
+        <link href="https://fonts.googleapis.com/css2?family=Gochi+Hand&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+        <link rel="stylesheet" href="./css/style.css">
+    </head>
+    <body>
+
+        <h1>Choose your favorite RGB color using the system below...</h1>
+
+        <div id="mainContent">
+            <div id="input" >
+                <h3 style="color: red;">Red</h3>
+                <input type="range" class="inputRange" id="redRange" min="0" max="255" step="1" value="0" onmousedown="mouseDown()" onmouseup="mouseUp()">
+                <input type="text" id="redValue"  value="0" readonly class="inputValue">
+
+                <h3 style="color: green;">Green</h3>
+                <input type="range" class="inputRange" id="greenRange" min="0" max="255" step="1" value="0" onmousedown="mouseDown()" onmouseup="mouseUp()">
+                <input type="text" id="greenValue"  value="0" readonly class="inputValue">
+
+                <h3 style="color: blue;">Blue</h3>
+                <input type="range" class="inputRange" id="blueRange" min="0" max="255" step="1" value="0" onmousedown="mouseDown()" onmouseup="mouseUp()">
+                <input type="text" id="blueValue" value="0" readonly class="inputValue">
+            </div>
+            
+                <div id="circleContent">
+                <div id="circle"></div>
+            
+                <p id="result">Your RGB color code is:</p>
+                <p id="rgbColor"></p>
+            
+            </div>
+        </div>
+
+        <footer>Developed by Antonio Almeida</footer>
+
+        <script src="./js/script.js"></script>
+    </body>
+
+    </html>

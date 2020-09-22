@@ -1,0 +1,118 @@
+html {
+    margin: 0;
+    scroll-behavior: smooth;
+    
+}
+
+body {
+    background-color: #023436;
+    margin-left: 200px;
+    margin-right: 200px;
+    font-family: 'Gochi Hand', cursive;
+
+    animation-name: animation;
+    animation-duration: 3s;
+}
+
+h1 {
+    color: #fcfffc;
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 50px;
+}
+
+h3 {
+    font-size: 50px;
+}
+
+p {
+    color: #fcfffc;
+    font-size: 30px;
+    padding-left: 55px;
+    font-weight: 400;
+}
+
+#mainContent {
+    display: flex;
+}
+
+#input {
+    
+    margin-top: 20px;
+    margin-bottom: 100px;
+    display: inline-block;
+    width: 50%;
+    text-align: -webkit-center;
+
+}
+
+
+
+#redRange, #greenRange, #blueRange {
+    width: 200px;
+    border: 2px solid white;
+    cursor: grab;
+}
+
+#redValue, #greenValue, #blueValue {
+    display: block;
+    margin-bottom: 30px;
+    text-align: center;
+    border-radius: 50%;
+    height: 70px;
+    width: 70px;
+    font-size: 30px;
+
+}
+
+#circleContent {
+    margin-top: 60px;
+    text-align: center;
+    width: 50%;
+    display: inline-block;
+    text-align: -webkit-left;
+}
+
+#circle {
+    width: 300px;
+    height: 300px;
+    background-color: black;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    margin-left: 40px;
+
+}
+
+#rgbColor {
+    padding-left: 110px;
+}
+
+.grabbing { 
+    cursor: grabbing;
+}
+
+.grab {
+    cursor: grab;
+}
+
+footer {
+    background-color: black;
+    color: #fcfffc;
+    width: 100%;
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 20px;
+    height: 30px;
+    font-size: 20px;
+}
+
+@keyframes animation {
+
+    0% {transform: translateY(200px);}
+    100% {transform: translate(0px);}
+
+    0% {opacity: 0.3;}
+    50% {opacity: 0.7;}
+    100% {opacity: 1;}
+
+}
